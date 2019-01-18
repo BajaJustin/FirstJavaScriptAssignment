@@ -1,0 +1,56 @@
+<!--
+	This program is a game designed for children, it is a simple dice game
+	based around who can roll all six numbers and draw the mouse on the screen
+	first.
+	
+	Author: Justin Baja, 000356032
+-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mouse Game</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<h1>The Mouse Game</h1>
+		<h3 id="p1Turn">Player 1's Turn</h3>
+		<h3 id="p2Turn">Player 2's Turn</h3>
+		<div class="mouseOne">
+			<img class="mouseBody" id="p1Body" src="mouseBody.png" alt="Mouse Body">
+			<img class="mouseTail" id="p1Tail" src="mouseTail.png" alt="Mouse Tail">
+			<img class="mouseEars" id="p1Ears" src="mouseEars.png" alt="Mouse Ears">
+			<img class="mouseEyes" id="p1Eyes" src="mouseEyes.png" alt="Mouse Eyes">
+			<img class="mouseNose" id="p1Nose" src="mouseNose.png" alt="Mouse Nose">
+			<img class="mouseWhiskers" id="p1Whiskers" src="mouseWhiskers.png" alt="Mouse Whiskers">
+			<input onclick="playerOneRoll()" type="submit" id="playerOneRoll" name="playerOneRoll" value="Roll">
+			<div id="playerOnePoints">
+				<p id="playerOneScore">0</p>
+			</div>
+		</div>
+		<div class="mouseTwo">
+			<img class="mouseBody" id="p2Body" src="mouseBody.png" alt="Mouse Body">
+			<img class="mouseTail" id="p2Tail" src="mouseTail.png" alt="Mouse Tail">
+			<img class="mouseEars" id="p2Ears" src="mouseEars.png" alt="Mouse Ears">
+			<img class="mouseEyes" id="p2Eyes" src="mouseEyes.png" alt="Mouse Eyes">
+			<img class="mouseNose" id="p2Nose" src="mouseNose.png" alt="Mouse Nose">
+			<img class="mouseWhiskers" id="p2Whiskers" src="mouseWhiskers.png" alt="Mouse Whiskers">
+			<input onclick="playerTwoRoll()" type="submit" id="playerTwoRoll" name="playerTwoRoll" value="Roll">
+			<div id="playerTwoPoints">
+				<p id="playerTwoScore">0</p>
+			</div>
+		</div>
+		<button onclick="resetGame()" id="resetButton" type="button"><strong>Reset</strong></button>
+		<button onclick="howTo()" id="helpButton" type="button"><strong>Help</strong></button>
+		<div id="howTo">
+			<p><strong><span id = "message">How To Play</span></strong></p>
+			<p>Roll 6 - Draw Body</p>
+			<p>Roll 5 - Draw Nose</p>
+			<p>Roll 4 - Draw Whiskers</p>
+			<p>Roll 3 - Draw Eyes</p>
+			<p>Roll 2 - Draw Ears</p>
+			<p>Roll 1 - Draw Tail</p>
+		</div> 
+		<script src="javaScript.js"></script>
+	</body>
+</html>

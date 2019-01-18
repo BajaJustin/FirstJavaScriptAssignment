@@ -1,0 +1,196 @@
+/*
+* Cascading Style Sheet for index.html, used for "The Mouse Game"\
+*
+* Adds cleaner visuals to "The Mouse Game" such as Background color, game size,
+*													buttons, etc.
+*
+* Justin Baja, 000356032, November 26, 2018
+*/
+
+body {
+	width: 320px;
+	height: 600px;
+	margin: 0;
+	overflow: hidden;
+	background-image: url("background.jpg");
+	background-repeat: no-repeat;
+}
+h1 {
+	margin: 0;
+	text-align: center;
+}
+#p1Turn {
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+#p2Turn {
+	float: right;
+	margin: 0;
+	padding: 0;
+	margin-right: 30px;
+	visibility: hidden;
+}
+.mouseOne {
+	float: left;
+	border: 2px solid black;
+	width: 150px;
+	height: 200px;
+	position: relative;
+	background-color: white;
+}
+#playerOneRoll {
+	position: absolute;
+	top: 102%;
+	left: 1%;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	background-color: #008CBA;
+	padding: 7px 22px;
+	text-align: center;
+	display: inline-block;
+	visibility: visible;
+}
+#playerOneScore {
+	background-color: white;
+	position: relative;
+	text-align: center;
+	top: 205px;
+	border: 2px solid black;
+	left: 60%;
+	margin: 0;
+	padding: 2px;
+	width: 50px;
+	height: 20px;
+}
+
+.mouseTwo {
+	float: right;
+	border: 2px solid black;
+	width: 150px;
+	height: 200px;
+	position: relative;
+	background-color: white;
+}
+
+#playerTwoRoll {
+	position: absolute;
+	top: 102%;
+	left: 1%;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	background-color: #008CBA;
+	padding: 7px 22px;
+	text-align: center;
+	display: inline-block;
+	visibility: hidden;
+}
+#playerTwoScore {
+	background-color: white;
+	position: relative;
+	text-align: center;
+	top: 205px;
+	border: 2px solid black;
+	left: 60%;
+	margin: 0;
+	padding: 2px;
+	width: 50px;
+	height: 20px;
+}
+#howTo {
+	position: absolute;
+	top: 38%;
+	background-color: white;
+	border: 2px solid black;
+	height: 250px;
+	width: 316px;
+	visibility: hidden;
+}
+span {
+	font-size: 20px;
+}
+.mouseBody{
+	position: absolute;
+	top: 65px;
+	left: 10px;
+	z-index: 50;
+	width: 100px;
+	clear: both;
+	visibility: hidden;
+}
+.mouseTail {
+	position: absolute;
+	top: 45px;
+	left: 45px;
+	z-index: 51;
+	margin-top: 0;
+	width: 100px;
+	clear: both;
+	visibility: hidden;
+}
+.mouseNose {
+	position: absolute;
+	top: 60px;
+	left: 5px;
+	z-index: 51;
+	margin-top: 0;
+	clear: both;
+	visibility: hidden;
+}
+.mouseWhiskers {
+	position: absolute;
+	top: 90px;
+	left: -55px;
+	z-index: 51;
+	margin-top: 0;
+	clear: both;
+	visibility: hidden;
+}
+.mouseEars {
+	position: absolute;
+	top: 50px;
+	left: 10px;
+	z-index: 51;
+	margin-top: 0;
+	clear: both;
+	visibility: hidden;
+}
+.mouseEyes {
+	position: absolute;
+	top: 50px;
+	left: -10px;
+	z-index: 51;
+	margin-top: 0;
+	width: 100px;
+	clear: both;
+	visibility: hidden;
+}
+#resetButton {
+	position: relative;
+	top: 300px;
+	left: 20px;
+	float: left;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	background-color: #FFA500;
+	padding: 7px 22px;
+	text-align: center;
+	display: inline-block;
+	visibility: hidden;
+}
+#helpButton {
+	position: relative;
+	top: 300px;
+	right: 20px;
+	float: right;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	background-color: #FFA500;
+	padding: 7px 22px;
+	text-align: center;
+	display: inline-block;
+}
